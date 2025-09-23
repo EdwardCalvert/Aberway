@@ -1,30 +1,8 @@
-![image](https://github.com/abdn-ai-soc/Aberway/assets/91621503/1f061265-1a21-4b53-ad19-0c47f7f2c1e1)# aberway
 The code for the Aberway hackathon.
-## Explanation:
-Participants are tasked with finding a path when given a starting position, some nodes that the path must cross through, and the length of the path. From that, the participants must find the path that starts at the starting position, goes through the given nodes, and ends on a node. 
 
-## Getting started:
+## Task
+Participants are tasked with finding a path when given a starting position, some nodes that the path must cross through, and the length of the path. From that, the participants must find the path that starts at the starting position, goes through the given nodes, and ends on a node. Fastest wins.
 
-To get started, participants must fork this repository, and edit the `Your_Name_Aberway.py` file. 
-
-## FAQ:
-
-How do we know that there will only be one path?
-
-We don’t necessarily know that there will only be one path, but there is a negligible chance that there are two paths that start from that given node, pass through the other mandatory nodes, are both the given length to two decimal places (even with the error), and both end on a node.
-
-Are the example locations correct?
-
-The locations are not necessarily what they are claimed to be by the examples.
-
-What is the random seed?
-
-`random.seed(a=0x5326478324724367635627432857846378)`
-
-
- 
-
-## Tasks:
 ### Example A
 A Delivery Person (referred to as “DP” from now on) at the Post Office at node 0. DP has a few mandatory packages to deliver that need to be delivered today, those are at nodes 10, 11, and 14. DP’s van only has 676.75 ±0.06 fuel. It is important that DP runs out of fuel at a Place where DP can stop (any node) so that DP can refill the van’s fuel with a fuel canister, so DP can not stop in the middle of the road. Find the path that DP must take, and where DP will have to refuel.
 
@@ -77,9 +55,26 @@ Length (AKA Final weight): `2044.79 ±0.14`
 
 Correct answer: `47, 45, 43, 42, 37, 34, 27, 26, 19 ,9, 3, 0 ,2, 11, 12`
 
- 
 
-### Participants Resources:
+## Getting started:
+
+To get started, for the repository and edit the `Your_Name_Aberway.py` file. 
+
+## FAQ:
+
+How do we know that there will only be one path?
+
+We don’t necessarily know that there will only be one path, but there is a negligible chance that there are two paths that start from that given node, pass through the other mandatory nodes, are both the given length to two decimal places (even with the error), and both end on a node.
+
+Are the example locations correct?
+
+The locations are not necessarily what they are claimed to be by the examples.
+
+What is the random seed?
+
+`random.seed(a=0x5326478324724367635627432857846378)`
+
+### Resources:
 Base map
 
 ![alt text](map.png)
@@ -93,16 +88,6 @@ Map with the node numbers
 
 # Base Code
 The basecode can be found in the `YourName__AberWay.py` file.
-
-# Presentation Slides 
-
-If you'd like to revist the slides during the presentation, please use this link 
-https://docs.google.com/presentation/d/1Crw7Cx9DMLbHH3xeuuz369dOOmhtPXVfVP9PtoSWJFE/edit?usp=sharing
-
-
-Graph Theory in Python:
-https://www.codedrome.com/graph-theory-in-python/
-
 Visualising Graphs - Gephi:
 https://gephi.org/users/
 
