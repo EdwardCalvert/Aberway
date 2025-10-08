@@ -105,6 +105,7 @@ def create(ColourFlip):
                 block.append([node[4],val]) # ID of nodes
                 block.append(0) # will be the weight
                 lineList.append(block)
+            
 
 
     # lines that have more than one point [PURELY VISUAL]
@@ -195,13 +196,13 @@ def update(NodePassIdList, screen, bg, lineList, nodeList, startPos, listOfNodes
 
         for i in range(0,len(NodePassIdList)-1):
             # in case the algorithm wants to sit still for a while
-            if NodePassIdList[i] == NodePassIdList[i + 1]:
+            if NodePassIdList[i] == NodePassIdList[i + 1]: #Same node twice
                 contiguousLineCount += 1
                 continue
             for line in lineList:
                 l = line[4]
+                
                 if l == [NodePassIdList[i], NodePassIdList[i+1]]:
-
                     # add the distance that has been traveled
                     if line[1] != None:
                         totalDist += math.dist(line[0], line[1])
